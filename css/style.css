@@ -1,0 +1,72 @@
+#underlay-image{
+  position: absolute;
+  width: 640px;
+  height: auto;
+  transform: translateX(-50%);
+  z-index: 1;
+  top: 120px;
+  left: 6.25in;
+  filter: blur(9.35px);
+  border-radius: 15%
+}
+#centered-image{
+  position: absolute;
+  width: 600px;
+  transform: translateX(-50%);
+  z-index: 2;
+  height: auto;
+  display: block;
+  top: 150px; 
+  left: 7.25in;
+  border-radius: 15%;
+}
+
+button {
+    background-color: rgb(160, 34, 152); /* Green button */
+    color: rgb(251, 251, 251);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* This is a simple interactive style! */
+button:hover {
+    background-color: #711a72; /* Darker green when the mouse is over it */
+}
+body {
+  background-color: rgb(84, 16, 120);
+}
+
+h1 {
+  position: absolute;
+  z-index: 3;
+  font-size: 70px;
+  transform: translateX(-50%);
+  top: 50px;
+  color: rgb(255, 255, 255);
+  left: 3.45in;
+}
+
+#text-container {
+  /* 1. LAYOUT SETTINGS */
+  width: 100%;            /* Make the container span the full width of the screen */
+  display: flex;          /* Activate Flexbox layout */
+  flex-direction: column; /* Stack the items vertically */
+  /* 2. SPACING/POSITIONING */
+  padding-right: 10px;    /* This creates the 10px margin from the right edge */
+  margin-top: 500px;      /* Pushes the container down, clearing your absolute images */
+}
+#reality,#meets,#imgination{
+  color: white;
+  font-size: 60px ;
+  margin-left: auto;
+  margin-right: 1.25in;
+}
+p {
+
+  font-family: verdana;
+  font-size: 20px;
+}

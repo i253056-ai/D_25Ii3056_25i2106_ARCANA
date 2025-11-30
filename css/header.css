@@ -1,0 +1,48 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+#mainHeader {
+    background-color: #f0f0f0; 
+    border-bottom: 2px solid #ccc;
+}
+#container{
+    background-color: rgb(160, 34, 152); 
+    border: 1px solid #9d38a4; 
+    padding: 10px;
+    
+    /* Center the rectangle on the page */
+    max-width: 16in;
+    height: 70px;
+    margin: 0 auto; 
+    
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+#homebutton
+{
+    size: 10px;
+    font-size: 40px;
+    color: white;
+    border-radius: 15px;
+    transform: rotateX(180deg);
+}
+#aboutbutton, #contactbutton {
+    background-color: white; 
+    color: rgb(160, 34, 152);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#homebutton:hover
+{
+    background-color: white;
+    color: #711a72;
+}
+#aboutbutton:hover, #contactbutton:hover {
+    background-color: #711a72; 
+}
