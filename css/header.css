@@ -11,9 +11,8 @@ body {
     border: 1px solid #9d38a4; 
     padding: 10px;
     
-    /* Center the rectangle on the page */
     max-width: 16in;
-    height: 70px;
+    height: 80px;
     margin: 0 auto; 
     
     display: flex;
@@ -25,10 +24,14 @@ body {
     size: 10px;
     font-size: 40px;
     color: white;
+    background-color: rgb(160, 34, 152); 
+    border: none;
+    cursor: pointer;
+    text-shadow: -2px -7px 6px black;
     border-radius: 15px;
     transform: rotateX(180deg);
 }
-#aboutbutton, #contactbutton {
+button {
     background-color: white; 
     color: rgb(160, 34, 152);
     padding: 8px 15px;
@@ -43,6 +46,6 @@ body {
     background-color: white;
     color: #711a72;
 }
-#aboutbutton:hover, #contactbutton:hover {
+button:hover{
     background-color: #711a72; 
 }

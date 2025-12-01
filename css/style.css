@@ -1,72 +1,189 @@
+
+
+.image-slider {
+    position: relative;
+    width: 105%;
+    max-width: 105%;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    pointer-events: none; /* Prevent clicking hidden slides */
+}
+
+.slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.7); /* Darken image slightly so text pops */
+}
+
+.slide-content {
+    text-align: center;
+    color: white;
+    max-height: 400px;
+    max-width: 600px;
+    z-index: 2;
+    padding: 20px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-text {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+
+/* Slider Arrows */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.arrow-left { left: 20px; }
+.arrow-right { right: 20px; }
 #underlay-image{
   position: absolute;
-  width: 640px;
+  width: 54%;
   height: auto;
-  transform: translateX(-50%);
   z-index: 1;
   top: 120px;
-  left: 6.25in;
+  left: 21%;
+  right: auto;
   filter: blur(9.35px);
   border-radius: 15%
 }
 #centered-image{
   position: absolute;
-  width: 600px;
-  transform: translateX(-50%);
+  width: 50%;
   z-index: 2;
   height: auto;
   display: block;
   top: 150px; 
-  left: 7.25in;
+  left: 27%;
+  right: auto;
   border-radius: 15%;
 }
 
-button {
-    background-color: rgb(160, 34, 152); /* Green button */
-    color: rgb(251, 251, 251);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-/* This is a simple interactive style! */
-button:hover {
-    background-color: #711a72; /* Darker green when the mouse is over it */
-}
 body {
   background-color: rgb(84, 16, 120);
+  align-items: center;
+  overflow-x: hidden;
 }
 
 h1 {
   position: absolute;
   z-index: 3;
-  font-size: 70px;
-  transform: translateX(-50%);
-  top: 50px;
+  font-size: 450%;
+  top: 12%;
   color: rgb(255, 255, 255);
-  left: 3.45in;
+  left: 20.5%;
 }
 
 #text-container {
-  /* 1. LAYOUT SETTINGS */
-  width: 100%;            /* Make the container span the full width of the screen */
-  display: flex;          /* Activate Flexbox layout */
-  flex-direction: column; /* Stack the items vertically */
-  /* 2. SPACING/POSITIONING */
-  padding-right: 10px;    /* This creates the 10px margin from the right edge */
-  margin-top: 500px;      /* Pushes the container down, clearing your absolute images */
+  width: 100%;            
+  display: flex;          
+  flex-direction: column; 
+  padding-right: 10px;    
+  margin-top: 500px;   
+     
 }
 #reality,#meets,#imgination{
   color: white;
   font-size: 60px ;
   margin-left: auto;
-  margin-right: 1.25in;
+  margin-right: 12.5%;
+}
+#container2{
+  transform: translateY(-100px);
+  max-width: 600px;
+  padding: 10px;
+  height: 70px;
+  margin-left: 80px;   
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+}
+.featured
+{
+  margin-left: 300px;
+  margin-top: 200px;
+  font-size: 64px;
 }
 p {
-
   font-family: verdana;
   font-size: 20px;
+}
+#fantasybutton,#thriller,#drama{
+
+  size: 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: palevioletred;
+  color: seashell;
+  box-shadow: 7px;
+  cursor: pointer;
+}
+#fantasybutton:hover, #thriller:hover, #drama:hover{
+  background-color:seashell ;
+  color: palevioletred;
+}
+footer {
+  margin-top: 10000000000000000000000000px;
+  z-index: 10;
+  text-align: center;
+  padding: 3px;
+  margin-top: 1500px;
+  background-color: rgb(0, 0, 0);
+  justify-content:space-between; 
+  border-radius: 20px;
+  color: white;
 }
