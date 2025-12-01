@@ -2,20 +2,21 @@
 <html>
   <head>
     <title>ARCANA</title>
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
  
     
   </head>
   <body>
-    <header id="mainheader">
-      <nav id="container">
+    <header class="mainheader">
+      <nav class="container">
         <button id="homebutton">ARCANA</button>
-        <button >LIBRARY</button>
-        <button >ABOUT US</button>
+        <button id="library">LIBRARY</button>
+        <button id="aboutus" >ABOUT US</button>
         <button >CONTACT US</button>
+        <button id="cart"><i class="bi bi-cart"></i></button>
         
       </nav>
     </header>
@@ -41,7 +42,7 @@
             <img src="assets/images/pexels-suzyhazelwood-1887609.jpg" alt="book1">
             <div class="slide-content">
                 <p class="slide-text">ALL BOOKS AVAILABLE</p>
-                <a href="listing.html" id="homebutton">VISIT LIBRARY</a>
+                <a href="library.html" id="homebutton">VISIT LIBRARY</a>
             </div>
         </div>
         <!-- Slide 2 -->
@@ -49,7 +50,7 @@
             <img src="assets/images/pexels-donghuangmingde-2177482.jpg" alt="book2">
             <div class="slide-content">
                 <p class="slide-text">FANTASY</p>
-                <button><a href="listing.html">SHOP NOW</a></button>
+                <button><a href="library.html">SHOP NOW</a></button>
             </div>
         </div>
         <!-- Slide 3 -->
@@ -57,7 +58,7 @@
             <img src="assets/images/pexels-pixabay-301920.jpg" alt="book3">
             <div class="slide-content">
                 <p class="slide-text">LITERATURE</p>
-                <button><a href="listing.html">SHOP NOW</a></button>
+                <button><a href="library.html">SHOP NOW</a></button>
             </div>
         </div>
         <!-- Slide 4 -->
@@ -65,13 +66,27 @@
             <img src="assets/images/pexels-leah-newhouse-50725-1666320.jpg" alt="books">
             <div class="slide-content">
                 <p class="slide-text">DRAMA</p>
-                <button><a href="listing.html">SHOP NOW</a></button>
+                <button><a href="library.html">SHOP NOW</a></button>
             </div>
         </div>
+   
        
   <script src="java/header.js" defer></script>
-   <footer>
-        <button>WHAT THE FUCK</button>
-    </footer>      
-  </body>
+         <footer>
+    <div class="row">
+        <div class="col">
+            <h5>CONTACT US</h5>
+        </div>
+        <div class="col">
+        <a href="aboutus.html"><h5>ABOUT US</h5></a>
+        </div>
+        <div class="col">
+            <h5>SOCIALS</h5>
+        </div>
+        <div class="col">
+            <h5>WHERE YOU CAN FIND US?<h5>
+        </div>
+    </div>
+    </footer>
+</body>
 </html>

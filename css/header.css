@@ -1,12 +1,13 @@
-body {
-    margin: 0; 
+body
+{
+    margin: 0;
     padding: 0;
 }
-#mainHeader {
+.mainHeader {
     background-color: #f0f0f0; 
     border-bottom: 2px solid #ccc;
 }
-#container{
+.container{
     background-color: rgb(160, 34, 152); 
     border: 1px solid #9d38a4; 
     padding: 10px;

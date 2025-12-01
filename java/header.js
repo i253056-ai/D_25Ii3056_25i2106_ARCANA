@@ -64,3 +64,23 @@ const slides = document.querySelectorAll('.slide');
     }
 
 });
+
+const home = document.getElementById('homebutton')
+const library = document.getElementById('library')
+
+const about = document.getElementById('aboutus')
+
+function homeclick(){
+    window.location.href = 'ARCANA.html';
+}
+function libraryclick(){
+    window.location.href = 'library.html';
+}
+function aboutclick()
+{
+    window.location.href = 'aboutus.html';
+}
+home.addEventListener('click',homeclick)
+library.addEventListener('click',libraryclick)
+about.addEventListener('click',aboutclick)
+
